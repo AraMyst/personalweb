@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Karla de Matos – Projects">
+  <title>Karla de Matos – Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 antialiased font-serif">
+
+  <header class="container mx-auto px-6 py-8 flex items-center justify-between border-b border-gray-200">
+    <div class="text-2xl font-bold">KRM Services</div>
+    <nav>
+      <ul class="flex space-x-8 uppercase text-sm">
+        <li><a href="projects.html" class="hover:underline transition-colors text-gray-700">Projects</a></li>
+        <li><a href="writing.html" class="hover:underline transition-colors text-gray-700">Writing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-gray-50 py-12 text-center">
+      <h1 class="text-4xl font-serif font-bold">Projects</h1>
+    </section>
+
+    <section id="projects-list" class="container mx-auto px-6 py-12">
+      <ul class="space-y-12">
+        <li class="text-center">
+          <img
+            src="https://images.pexels.com/photos/6771613/pexels-photo-6771613.jpeg"
+            alt="CryptoNews Hub"
+            class="mx-auto w-48 h-32 object-cover rounded mb-4"
+          />
+          <a href="crypto.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+            CryptoNews Hub →
+          </a>
+          <p class="text-gray-700 mt-1">Real-time cryptocurrency headlines in a sleek card layout.</p>
+        </li>
+        <li class="text-center">
+          <img
+            src="https://images.pexels.com/photos/5941331/pexels-photo-5941331.jpeg"
+            alt="Which Philosopher Represents You?"
+            class="mx-auto w-48 h-32 object-cover rounded mb-4"
+          />
+          <a href="quiz.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+            Which Philosopher Represents You? →
+          </a>
+          <p class="text-gray-700 mt-1">Discover which great thinker aligns with your ideas.</p>
+        </li>
+        <li class="text-center">
+          <img
+            src="https://images.pexels.com/photos/8438944/pexels-photo-8438944.jpeg"
+            alt="ChessMaster Online"
+            class="mx-auto w-48 h-32 object-cover rounded mb-4"
+          />
+          <a href="chess.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+            ChessMaster Online →
+          </a>
+          <p class="text-gray-700 mt-1">Play against an AI opponent with full move validation.</p>
+        </li>
+        <li class="text-center">
+          <img
+            src="https://images.pexels.com/photos/7319085/pexels-photo-7319085.jpeg"
+            alt="TextCipher Pro"
+            class="mx-auto w-48 h-32 object-cover rounded mb-4"
+          />
+          <a href="encode-decode.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+            TextCipher Pro →
+          </a>
+          <p class="text-gray-700 mt-1">Encode or decode messages with a custom shift cipher.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container mx-auto px-6 py-8 text-center text-sm text-gray-600 bg-gray-50 border-t border-gray-200">
+    © 2025 KRM
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('text-blue-500')
+      }
+    })
+  </script>
+</body>
+</html>

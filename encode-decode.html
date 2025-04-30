@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="TextCipher Pro by Karla de Matos">
+  <title>TextCipher Pro – Karla de Matos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 antialiased font-serif">
+  <header class="container mx-auto px-6 py-8 flex items-center justify-between border-b border-gray-200">
+    <div class="text-2xl font-bold">KRM Services</div>
+    <nav>
+      <ul class="flex space-x-8 uppercase text-sm">
+        <li><a href="projects.html" class="text-gray-700 hover:underline transition-colors">Projects</a></li>
+        <li><a href="writing.html" class="text-gray-700 hover:underline transition-colors">Writing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container mx-auto px-6 py-12">
+    <h1 class="text-4xl font-serif font-bold mb-4 text-center">TextCipher Pro</h1>
+    <img src="https://images.pexels.com/photos/7319085/pexels-photo-7319085.jpeg"
+         alt="TextCipher Pro"
+         class="mx-auto w-56 h-40 object-cover rounded mb-8"/>
+    <p class="text-gray-700 mb-8 max-w-2xl mx-auto text-justify">
+      TextCipher Pro is a simple Caesar cipher web app I created to solidify my knowledge of event handling and string manipulation in JavaScript; it allows users to encode or decode messages with a custom shift key through a clear, user-friendly interface with instant results.
+    </p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://aramyst.github.io/encode-decode/" target="_blank" class="text-blue-500 hover:underline">Live Demo →</a>
+      <a href="https://github.com/aramyst/encode-decode" target="_blank" class="text-blue-500 hover:underline">GitHub Repo →</a>
+    </div>
+  </main>
+  <footer class="container mx-auto px-6 py-8 text-center text-sm text-gray-600 bg-gray-50 border-t border-gray-200">
+    © 2025 KRM
+  </footer>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      if (link.href === window.location.href) link.classList.add('text-blue-500')
+    })
+  </script>
+</body>
+</html>
