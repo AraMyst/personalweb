@@ -10,67 +10,85 @@
 <body class="bg-white text-gray-900 antialiased font-serif">
 
   <header class="container mx-auto px-6 py-8 flex items-center justify-between border-b border-gray-200">
-    <div class="text-2xl font-bold">KRM Services</div>
+    <a href="index.html" class="text-2xl font-bold hover:underline">KRM Services</a>
     <nav>
       <ul class="flex space-x-8 uppercase text-sm">
-        <li><a href="projects.html" class="hover:underline transition-colors text-gray-700">Projects</a></li>
-        <li><a href="writing.html" class="hover:underline transition-colors text-gray-700">Writing</a></li>
+        <li>
+          <a href="projects.html"
+             class="text-blue-500 underline transition-colors">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="writing.html"
+             class="text-gray-700 hover:underline transition-colors">
+            Writing
+          </a>
+        </li>
+        <li>
+          <a href="resume.html"
+             class="text-gray-700 hover:underline transition-colors">
+            Resume
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
+  
 
   <main>
     <section class="bg-gray-50 py-12 text-center">
       <h1 class="text-4xl font-serif font-bold">Projects</h1>
     </section>
 
-    <section id="projects-list" class="container mx-auto px-6 py-12">
-      <ul class="space-y-12">
-        <li class="text-center">
-          <img
-            src="https://images.pexels.com/photos/6771613/pexels-photo-6771613.jpeg"
-            alt="CryptoNews Hub"
-            class="mx-auto w-48 h-32 object-cover rounded mb-4"
-          />
-          <a href="crypto.html" class="text-2xl font-semibold text-blue-500 hover:underline">
-            CryptoNews Hub →
-          </a>
-          <p class="text-gray-700 mt-1">Real-time cryptocurrency headlines in a sleek card layout.</p>
-        </li>
-        <li class="text-center">
-          <img
-            src="https://images.pexels.com/photos/5941331/pexels-photo-5941331.jpeg"
-            alt="Which Philosopher Represents You?"
-            class="mx-auto w-48 h-32 object-cover rounded mb-4"
-          />
-          <a href="quiz.html" class="text-2xl font-semibold text-blue-500 hover:underline">
-            Which Philosopher Represents You? →
-          </a>
-          <p class="text-gray-700 mt-1">Discover which great thinker aligns with your ideas.</p>
-        </li>
-        <li class="text-center">
-          <img
-            src="https://images.pexels.com/photos/8438944/pexels-photo-8438944.jpeg"
-            alt="ChessMaster Online"
-            class="mx-auto w-48 h-32 object-cover rounded mb-4"
-          />
-          <a href="chess.html" class="text-2xl font-semibold text-blue-500 hover:underline">
-            ChessMaster Online →
-          </a>
-          <p class="text-gray-700 mt-1">Play against an AI opponent with full move validation.</p>
-        </li>
-        <li class="text-center">
-          <img
-            src="https://images.pexels.com/photos/7319085/pexels-photo-7319085.jpeg"
-            alt="TextCipher Pro"
-            class="mx-auto w-48 h-32 object-cover rounded mb-4"
-          />
-          <a href="encode-decode.html" class="text-2xl font-semibold text-blue-500 hover:underline">
-            TextCipher Pro →
-          </a>
-          <p class="text-gray-700 mt-1">Encode or decode messages with a custom shift cipher.</p>
-        </li>
-      </ul>
+    <section id="projects-list" class="container mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 gap-12">
+      <div class="text-center">
+        <img
+          src="https://images.pexels.com/photos/6771613/pexels-photo-6771613.jpeg"
+          alt="CryptoNews Hub"
+          class="mx-auto w-48 h-32 object-cover rounded mb-4"
+        />
+        <a href="crypto.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+          CryptoNews Hub →
+        </a>
+        <p class="text-gray-700 mt-1">Real-time cryptocurrency headlines in a sleek card layout.</p>
+      </div>
+
+      <div class="text-center">
+        <img
+          src="https://images.pexels.com/photos/5941331/pexels-photo-5941331.jpeg"
+          alt="Which Philosopher Represents You?"
+          class="mx-auto w-48 h-32 object-cover rounded mb-4"
+        />
+        <a href="quiz.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+          Which Philosopher Represents You? →
+        </a>
+        <p class="text-gray-700 mt-1">Discover which great thinker aligns with your ideas.</p>
+      </div>
+
+      <div class="text-center">
+        <img
+          src="https://images.pexels.com/photos/8438944/pexels-photo-8438944.jpeg"
+          alt="ChessMaster Online"
+          class="mx-auto w-48 h-32 object-cover rounded mb-4"
+        />
+        <a href="chess.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+          ChessMaster Online →
+        </a>
+        <p class="text-gray-700 mt-1">Play against an AI opponent with full move validation.</p>
+      </div>
+
+      <div class="text-center">
+        <img
+          src="https://images.pexels.com/photos/7319085/pexels-photo-7319085.jpeg"
+          alt="TextCipher Pro"
+          class="mx-auto w-48 h-32 object-cover rounded mb-4"
+        />
+        <a href="encode-decode.html" class="text-2xl font-semibold text-blue-500 hover:underline">
+          TextCipher Pro →
+        </a>
+        <p class="text-gray-700 mt-1">Encode or decode messages with a custom shift cipher.</p>
+      </div>
     </section>
   </main>
 
